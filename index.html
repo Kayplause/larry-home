@@ -69,25 +69,68 @@
     </div>
 <div class="">
     
-
       <div id="slider" class="sl-slider-wrapper">
+        <div class="sl-slider">      
+         <!-- <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2"> -->
+           <!-- <div class="sl-slide-inner">  -->
+               <div class="row">
+                    <div class="col">
+                        <div class="feature-img">
+                            <img src="images/slider/21.jpg" width="100%">                       
+                            <img src="images/slider/play.png" class="play-btn" 
+                            onclick="playVideo('media/example.mp4')">       
+                            </div>
+                    </div>
+                    <div class="col">
+                        <div class="small-img-row">
+                            <div class="small-img">
+                              <img src="images/slider/2.jpg" width="100%">                       
+                              <img src="images/slider/play.png" class="play-btn"
+                                onclick="playVideo('media/chini.mp4')">       
+                            </div>
+                            <p> Oakwood Estate Launch, Imosan, Ibeju-Lekki, Lagos-Nigeria</p>
+                        </div>
+            
+                        <div class="small-img-row">
+                            <div class="small-img">
+                              <img src="images/slider/chini.jpg" width="100%">                       
+                              <img src="images/slider/play.png" class="play-btn"
+                                onclick="playVideo('media/road.mp4')">               
+                            </div>
+                            <p> Oakwood Estate Launch, Imosan, Ibeju-Lekki, Lagos-Nigeria</p>
+                        </div>
+            
+                        <div class="small-img-row">
+                            <div class="small-img"> 
+                              <img src="images/slider/agent.jpg" width="100%">                       
+                              <img src="images/slider/play.png" class="play-btn"
+                                onclick="playVideo('media/example.mp4')"> 
+                            </div>
+                            <p> Oakwood Estate Launch, Imosan, Ibeju-Lekki, Lagos-Nigeria</p>
 
-        <div class="sl-slider">
-        
-         <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-            <div class="sl-slide-inner">
-              <div class="bg-img bg-img-1"></div>
-              <h2><a href="#">Parcel of land going for sale at Oakwood Estate, Imosan, Ibeju-Lekki</a></h2>
-              <blockquote>              
+                        </div>
+                    </div>
+                </div> 
+                <div class="video-player" id="videoPlayer">
+                  <video width="100%" controls autoplay id="myVideo">
+                      <source src="media/example.mp4" type="video/mp4">
+                  </video>
+                  <img src="images/slider/close.png" class="close-btn"
+                  onclick="stopVideo()">
+              </div>   
+                <!-- <iframe width="1250" height="515" src="https://www.youtube.com/embed/3gCI-rwBRoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            -->
+            <!-- </div> -->
+           </div>
+          <!-- <blockquote>              
               <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 2, Ashimi Close, Atunrase Estate, Gbagada, Lagos.</p>
               <p>Until he extends the circle of his compassion to the average, man will not himself find peace. 
                 Invest in affordable housing now -before it is too late.</p>
               <cite>N1,300,000</cite>
-              </blockquote>
+              </blockquote> -->
             </div>
-          </div> 
+          <!-- </div>  -->
           
-          <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+          <!-- <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
             <div class="sl-slide-inner">
               <div class="bg-img bg-img-2"></div>
               <h2><a href="#">Proposed Residential Homes</a></h2>
@@ -97,9 +140,9 @@
               <cite>N27,000,000 &ndash;<span>Upwards</span></cite>
               </blockquote>
             </div>
-          </div> 
+          </div>  -->
           
-          <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+          <!-- <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
             <div class="sl-slide-inner">
               <div class="bg-img bg-img-3"></div>
               <h2><a href="#">Proposed Residential Cottages</a></h2>
@@ -109,8 +152,7 @@
               <p><cite>N47,000,000</cite></p>
               </blockquote>
             </div>
-          </div> 
-          
+          </div>         -->
           <!-- <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
             <div class="sl-slide-inner">
               <div class="bg-img bg-img-4"></div>
@@ -134,7 +176,7 @@
               </blockquote>
             </div>
           </div> -->
-        </div><!-- /sl-slider -->
+        <!-- </div><!-- /sl-slider -- -->
 
 
 
@@ -146,183 +188,183 @@
           <span></span>
         </nav>
 
-      </div><!-- /slider-wrapper -->
-</div>
+        </div><!--/slider-wrapper-->
+  </div>
 
 
 
-<div class="banner-search">
-  <div class="container"> 
-    <!-- banner -->
-    <h3>Buy, Sale & Rent</h3>
-    <div class="searchbar">
-      <div class="row">
-        <div class="col-lg-6 col-sm-6">
-          <input type="text" class="form-control" placeholder="Search of Properties">
-          <div class="row">
-            <div class="col-lg-3 col-sm-3 ">
-              <select class="form-control">
-                <option>Buy</option>
-                <option>Rent</option>
-                <option>Sale</option>
-              </select>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-              <select class="form-control">
-                <option>Price</option>
-                <option>N1,500,000 - N2,000,000</option>
-                <option>N2,000,000 - N2,000,000</option>
-                <option>N2,O00,000 - N3,000,000</option>
-                <option>N3,000,000 - above</option>
-              </select>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-            <select class="form-control">
-                <option>Property</option>
-                <option>Apartment</option>
-                <option>Building</option>
-                <option>Office Space</option>
-              </select>
+  <div class="banner-search">
+    <div class="container"> 
+      <!-- banner -->
+      <h3>Buy, Sale & Rent</h3>
+      <div class="searchbar">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <input type="text" class="form-control" placeholder="Search of Properties">
+            <div class="row">
+              <div class="col-lg-3 col-sm-3 ">
+                <select class="form-control">
+                  <option>Buy</option>
+                  <option>Rent</option>
+                  <option>Sale</option>
+                </select>
               </div>
               <div class="col-lg-3 col-sm-4">
-              <button class="btn btn-success"  onclick="window.location.href='buysalerent.html'">Find Now</button>
+                <select class="form-control">
+                  <option>Price</option>
+                  <option>N1,500,000 - N2,000,000</option>
+                  <option>N2,000,000 - N2,000,000</option>
+                  <option>N2,O00,000 - N3,000,000</option>
+                  <option>N3,000,000 - above</option>
+                </select>
               </div>
+              <div class="col-lg-3 col-sm-4">
+              <select class="form-control">
+                  <option>Property</option>
+                  <option>Apartment</option>
+                  <option>Building</option>
+                  <option>Office Space</option>
+                </select>
+                </div>
+                <div class="col-lg-3 col-sm-4">
+                <button class="btn btn-success"  onclick="window.location.href='buysalerent.html'">Find Now</button>
+                </div>
+            </div>
+            
+            
           </div>
-          
-          
-        </div>
-        <div class="col-lg-5 col-lg-offset-1 col-sm-6 ">
-          <p>Join now and get updated with all the properties deals.</p>
-          <button class="btn btn-info" data-toggle="modal" data-target="#loginpop">Login</button> 
+          <div class="col-lg-5 col-lg-offset-1 col-sm-6 ">
+            <p>Join now and get updated with all the properties deals.</p>
+            <button class="btn btn-info" data-toggle="modal" data-target="#loginpop">Login</button> 
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!-- banner -->
-<div class="container">
-  <div class="properties-listing spacer"> <a href="buysalerent.html" class="pull-right viewall">View All Listing</a>
-    <h2>Featured Properties</h2>
-    <div id="owl-example" class="owl-carousel">
-      <div class="properties">
-        <div class="image-holder"><img src="images/properties/5.jpeg" class="img-responsive" alt="properties"/>
-          <div class="status sold">Sold</div>
-        </div>
-        <h4><a href="property-detail.html">Royal Inn</a></h4>
-        <p class="price">Price: N2,234,900,000</p>
-        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Apartment">5</span> 
-        <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> 
-        <!-- <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>  -->
-        <!-- <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>  -->
-      </div>
-        <a class="btn btn-primary" href="property-detail.html">View Details</a>
-      </div>
-
-      <div class="properties">
-        <div class="image-holder"><img src="images/properties/p.png" class="img-responsive" alt="properties"/>
-          <div class="status new">New</div>
-        </div>
-        <h4><a href="property-detail.html">Commercial Land</a></h4>
-        <p class="price">Price: N2,000,000,000</p>
-        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Land">2</span>
-         <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> 
-         <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>
-         <!-- <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>  -->
-        </div>
-        <a class="btn btn-primary" href="property-detail.html">View Details</a>
-      </div>
-
-      <div class="properties">
-        <div class="image-holder"><img src="images/properties/9.jpeg" class="img-responsive" alt="properties"/></div>
-        <h4><a href="property-detail.php">Oakwood Estate, Ikota</a></h4>
-        <p class="price">Price: N1,300,000</p>
-        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Land">2</span> 
-        <span data-toggle="tooltip" data-placement="bottom" data-original-title="Apartment">5</span> 
-        <!-- <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>  -->
-        <!-- <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>  -->
-      </div>
-        <a class="btn btn-primary" href="property-detail.html">View Details</a>
-      </div>
-
-       <div class="properties">
-        <div class="image-holder"><img src="images/properties/7.jpg" class="img-responsive" alt="properties"/></div>
-        <h4><a href="property-detail.html">Parcel Land</a></h4>
-        <p class="price">Price: N1,234,900</p>
-        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Apartment">5</span>
-           <span data-toggle="tooltip" data-placement="bottom" data-original-title="Land">2</span>
+  <!-- banner -->
+  <div class="container">
+    <div class="properties-listing spacer"> <a href="buysalerent.html" class="pull-right viewall">View All Listing</a>
+      <h2>Featured Properties</h2>
+      <div id="owl-example" class="owl-carousel">
+        <div class="properties">
+          <div class="image-holder"><img src="images/properties/5.jpeg" class="img-responsive" alt="properties"/>
+            <div class="status sold">Sold</div>
+          </div>
+          <h4><a href="property-detail.html">Royal Inn</a></h4>
+          <p class="price">Price: N2,234,900,000</p>
+          <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Apartment">5</span> 
+          <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> 
           <!-- <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>  -->
-           <!-- <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> -->
-          </div> 
-        <a class="btn btn-primary" href="property-detail.html">View Details</a>
-      </div> 
+          <!-- <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>  -->
+        </div>
+          <a class="btn btn-primary" href="property-detail.html">View Details</a>
+        </div>
 
-     <div class="properties">
-        <div class="image-holder"><img src="images/properties/8.jpg" class="img-responsive" alt="properties"/>
-          <div class="status sold">Open</div>
-        </div>
-        <h4><a href="property-detail.html">Acres of Land</a></h4>
-        <p class="price">Price: N1,234,900/plot</p>
-        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Apartment">5</span>
-           <span data-toggle="tooltip" data-placement="bottom" data-original-title="Land">2</span> 
-        <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">3</span>
-         <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>  
-        </div>
-        <a class="btn btn-primary" href="property-detail.html">View Details</a>
-      </div>  
-
-      <!-- <div class="properties">
-        <div class="image-holder"><img src="images/properties/2.jpg" class="img-responsive" alt="properties"/>
-          <div class="status sold">Sold</div>
-        </div>
-        <h4><a href="property-detail.php">Royal Inn</a></h4>
-        <p class="price">Price: $234,900</p>
-        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-        <a class="btn btn-primary" href="property-detail.php">View Details</a>
-      </div> -->
-      <!-- <div class="properties">
-        <div class="image-holder"><img src="images/properties/3.jpg" class="img-responsive" alt="properties"/>
-          <div class="status new">New</div>
-        </div>
-        <h4><a href="property-detail.php">Royal Inn</a></h4>
-        <p class="price">Price: $234,900</p>
-        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-        <a class="btn btn-primary" href="property-detail.php">View Details</a>
-      </div> -->
-      <!-- <div class="properties">
-        <div class="image-holder"><img src="images/properties/4.jpg" class="img-responsive" alt="properties"/></div>
-        <h4><a href="property-detail.php">Royal Inn</a></h4>
-        <p class="price">Price: $234,900</p>
-        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-        <a class="btn btn-primary" href="property-detail.php">View Details</a>
-      </div> -->
-      <!-- <div class="properties">
-        <div class="image-holder"><img src="images/properties/1.jpg" class="img-responsive" alt="properties"/></div>
-        <h4><a href="property-detail.php">Royal Inn</a></h4>
-        <p class="price">Price: $234,900</p>
-        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-        <a class="btn btn-primary" href="property-detail.php">View Details</a>
-      </div> -->
-      <!-- <div class="properties">
-        <div class="image-holder"><img src="images/properties/2.jpg" class="img-responsive" alt="properties"/></div>
-        <h4><a href="property-detail.php">Royal Inn</a></h4>
-        <p class="price">Price: $234,900</p>
-        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
-        <a class="btn btn-primary" href="property-detail.php">View Details</a>
-      </div> -->
-      <!-- <div class="properties">
-        <div class="image-holder"><img src="images/properties/3.jpg" class="img-responsive" alt="properties"/></div>
-        <h4><a href="property-detail.php">Royal Inn</a></h4>
-        <p class="price">Price: $234,900</p>
-        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span>
-           <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span>
-           <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> 
-           <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> 
+        <div class="properties">
+          <div class="image-holder"><img src="images/properties/p.png" class="img-responsive" alt="properties"/>
+            <div class="status new">New</div>
           </div>
-        <a class="btn btn-primary" href="property-detail.php">View Details</a>
-      </div> -->
-      
+          <h4><a href="property-detail.html">Commercial Land</a></h4>
+          <p class="price">Price: N2,000,000,000</p>
+          <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Land">2</span>
+          <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> 
+          <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>
+          <!-- <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>  -->
+          </div>
+          <a class="btn btn-primary" href="property-detail.html">View Details</a>
+        </div>
+
+        <div class="properties">
+          <div class="image-holder"><img src="images/properties/9.jpeg" class="img-responsive" alt="properties"/></div>
+          <h4><a href="property-detail.php">Oakwood Estate, Ikota</a></h4>
+          <p class="price">Price: N1,300,000</p>
+          <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Land">2</span> 
+          <span data-toggle="tooltip" data-placement="bottom" data-original-title="Apartment">5</span> 
+          <!-- <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>  -->
+          <!-- <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>  -->
+        </div>
+          <a class="btn btn-primary" href="property-detail.html">View Details</a>
+        </div>
+
+        <div class="properties">
+          <div class="image-holder"><img src="images/properties/7.jpg" class="img-responsive" alt="properties"/></div>
+          <h4><a href="property-detail.html">Parcel Land</a></h4>
+          <p class="price">Price: N1,234,900</p>
+          <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Apartment">5</span>
+            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Land">2</span>
+            <!-- <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>  -->
+            <!-- <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> -->
+            </div> 
+          <a class="btn btn-primary" href="property-detail.html">View Details</a>
+        </div> 
+
+      <div class="properties">
+          <div class="image-holder"><img src="images/properties/8.jpg" class="img-responsive" alt="properties"/>
+            <div class="status sold">Open</div>
+          </div>
+          <h4><a href="property-detail.html">Acres of Land</a></h4>
+          <p class="price">Price: N1,234,900/plot</p>
+          <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Apartment">5</span>
+            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Land">2</span> 
+          <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">3</span>
+          <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>  
+          </div>
+          <a class="btn btn-primary" href="property-detail.html">View Details</a>
+        </div>  
+
+        <!-- <div class="properties">
+          <div class="image-holder"><img src="images/properties/2.jpg" class="img-responsive" alt="properties"/>
+            <div class="status sold">Sold</div>
+          </div>
+          <h4><a href="property-detail.php">Royal Inn</a></h4>
+          <p class="price">Price: $234,900</p>
+          <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
+          <a class="btn btn-primary" href="property-detail.php">View Details</a>
+        </div> -->
+        <!-- <div class="properties">
+          <div class="image-holder"><img src="images/properties/3.jpg" class="img-responsive" alt="properties"/>
+            <div class="status new">New</div>
+          </div>
+          <h4><a href="property-detail.php">Royal Inn</a></h4>
+          <p class="price">Price: $234,900</p>
+          <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
+          <a class="btn btn-primary" href="property-detail.php">View Details</a>
+        </div> -->
+        <!-- <div class="properties">
+          <div class="image-holder"><img src="images/properties/4.jpg" class="img-responsive" alt="properties"/></div>
+          <h4><a href="property-detail.php">Royal Inn</a></h4>
+          <p class="price">Price: $234,900</p>
+          <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
+          <a class="btn btn-primary" href="property-detail.php">View Details</a>
+        </div> -->
+        <!-- <div class="properties">
+          <div class="image-holder"><img src="images/properties/1.jpg" class="img-responsive" alt="properties"/></div>
+          <h4><a href="property-detail.php">Royal Inn</a></h4>
+          <p class="price">Price: $234,900</p>
+          <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
+          <a class="btn btn-primary" href="property-detail.php">View Details</a>
+        </div> -->
+        <!-- <div class="properties">
+          <div class="image-holder"><img src="images/properties/2.jpg" class="img-responsive" alt="properties"/></div>
+          <h4><a href="property-detail.php">Royal Inn</a></h4>
+          <p class="price">Price: $234,900</p>
+          <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
+          <a class="btn btn-primary" href="property-detail.php">View Details</a>
+        </div> -->
+        <!-- <div class="properties">
+          <div class="image-holder"><img src="images/properties/3.jpg" class="img-responsive" alt="properties"/></div>
+          <h4><a href="property-detail.php">Royal Inn</a></h4>
+          <p class="price">Price: $234,900</p>
+          <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span>
+            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span>
+            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> 
+            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> 
+            </div>
+          <a class="btn btn-primary" href="property-detail.php">View Details</a>
+        </div> -->
+        
+      </div>
     </div>
-  </div>
   <div class="spacer">
     <div class="row">
       <div class="col-lg-6 col-sm-9 recent-view">
@@ -473,6 +515,21 @@
 
 
 </body>
+
+
+<script>
+var videoPlayer = document.getElementById("videoPlayer");
+var myVideo = document.getElementById("myVideo");
+
+function stopVideo(){
+   videoPlayer.style.display = "none";
+}
+
+function playVideo(file){
+  myVideo.src = file;
+  videoPlayer.style.display = "block";
+}
+</script>
 </html>
 
 
